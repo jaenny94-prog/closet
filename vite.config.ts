@@ -4,6 +4,10 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
+  base: '/closet/',
+  plugins: [react()],
+  // ... (나머지 기존 코드)
+})
   return {
     plugins: [react(), tailwindcss()],
     resolve: {
