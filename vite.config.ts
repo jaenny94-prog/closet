@@ -4,11 +4,15 @@ import path from 'path';
 import {defineConfig} from 'vite';
 
 export default defineConfig(() => {
-  base: '/closet/',
-  plugins: [react()],
-  // ... (나머지 기존 코드)
-})
   return {
+    base: '/closet/',
+    plugins: [react(), tailwindcss()],
+    resolve: {
+      alias: {
+        '@': path.resolve(__dirname, '.'),
+      },
+    },
+    // ... (이하 기존 코드 유지)
     plugins: [react(), tailwindcss()],
     resolve: {
       alias: {
