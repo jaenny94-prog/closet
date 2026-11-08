@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --palette-pink: #FFCED8;
+    --palette-blush: #FFDDDD;
+    --palette-cream: #FFF4DE;
+    --palette-peach: #FFE8C4;
+    --palette-rose: #E11D48;
+    --palette-text: #2D1E22;
+  }
+
+  body {
+    font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', sans-serif;
+    background-color: #FFFDF9;
+    color: #2D1E22;
+    -webkit-tap-highlight-color: transparent;
+    letter-spacing: -0.015em;
+  }
+}
+
+/* Modern Minimalist Architectural Shadows & Elevation */
+.shadow-modern-sm {
+  box-shadow: 0 1px 2px 0 rgba(45, 30, 34, 0.05);
+}
+
+.shadow-modern {
+  box-shadow: 0 1px 3px 0 rgba(45, 30, 34, 0.06), 0 1px 2px -1px rgba(45, 30, 34, 0.06);
+}
+
+.shadow-modern-md {
+  box-shadow: 0 4px 16px -2px rgba(45, 30, 34, 0.06), 0 2px 6px -1px rgba(45, 30, 34, 0.03);
+}
+
+.shadow-modern-lg {
+  box-shadow: 0 12px 32px -4px rgba(45, 30, 34, 0.08), 0 4px 12px -2px rgba(45, 30, 34, 0.04);
+}
+
+.shadow-modern-float {
+  box-shadow: 0 16px 40px -8px rgba(45, 30, 34, 0.12), 0 4px 14px -2px rgba(45, 30, 34, 0.04);
+}
+
+/* Color Hunt Palette Helpers */
+.bg-palette-pink { background-color: #FFCED8; }
+.bg-palette-blush { background-color: #FFDDDD; }
+.bg-palette-cream { background-color: #FFF4DE; }
+.bg-palette-peach { background-color: #FFE8C4; }
+
+.border-palette-pink { border-color: #FFCED8; }
+.border-palette-blush { border-color: #FFDDDD; }
+.border-palette-cream { border-color: #FFF4DE; }
+.border-palette-peach { border-color: #FFE8C4; }
+
+.gradient-blossom-cream {
+  background: linear-gradient(135deg, #FFF4DE 0%, #FFDDDD 50%, #FFCED8 100%);
+}
+
+.gradient-peach-pink {
+  background: linear-gradient(135deg, #FFE8C4 0%, #FFCED8 100%);
+}
+
+.gradient-soft-card {
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFFDF8 100%);
+}
+
+/* Minimalist precision scrollbars */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #FFCED8;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #FDA4AF;
+}
+
+/* Safe area padding helper */
+.pb-safe {
+  padding-bottom: env(safe-area-inset-bottom, 20px);
+}

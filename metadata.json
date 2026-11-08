@@ -1,0 +1,6 @@
+{
+  "name": "스마트 옷장 & AI 스타일리스트 (SmartCloset AI)",
+  "description": "나만의 스마트 옷장 관리, 바코드/택 분석, 착용 횟수 및 1회 착용 비용(가성비) 추적, 장기 미착용 의류 비우기/기부 알림, 신체 치수 맞춤 AI 코디 추천 서비스",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
